@@ -1,0 +1,102 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Body styling */
+body {
+    background: #f0f2f5;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* App container styling */
+#app {
+    display: grid;
+    grid-auto-rows: minmax(150px, auto);
+    height: 100vh;
+    background: #fff;
+    color: #333;
+    justify-content: center;
+    grid-gap: 1em;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+}
+
+/* Entry styling */
+.entry {
+    background: rgba(59, 74, 107, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Input and textarea styling */
+input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: #f0f2f5;
+    color: #333;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 15px;
+    background: #007BFF;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Headline styling */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+/* Reset style for HTML element on active to have no border */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/* Style for Placeholder Text */
+::placeholder {
+    color: #999;
+}
